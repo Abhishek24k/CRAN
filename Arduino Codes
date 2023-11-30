@@ -1,1 +1,24 @@
+ int LDR = 8;
+int LED = 9;
+
+
+void setup() 
+{
+  pinMode(LDR,INPUT);
+  pinMode(LED,OUTPUT);
+
+}
+
+void loop() 
+{
+  if( digitalRead(LDR)==LOW)
+  {
+    digitalWrite(LED, LOW);
+  }
+else
+{
+  digitalWrite(LED, HIGH);
+}
+
+}
 
